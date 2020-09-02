@@ -92,24 +92,24 @@ Du behöver sedan ändra ett saker på varje sida.
             <p> 
             </p>
             <p> På <a href="http://www.interflora.se" target="_blank">
-            </a> Texten på reklamskylten betyder "Gör ditt hår mjukt". </p>
-            <img src="./img/shampoo.jpg" alt="Shampoonering" class="responsive" width="600" height="400">
+            </a> Camilla Läckbergs bok från 2017 heter "Häxan". </p>
+            <img src="./img/haxan2.jpg" alt="Häxan av Camilla Läckberg" class="responsive" width="600" height="400">
             <br>
             <br>
-            <h4>Bra jobbat! Nu kan du gå vidare till uppdrag 4! </h4>
+            <h4>Bra jobbat! Nu kan du gå vidare till uppdrag 5! </h4>
             <br>
             <br>
             <!--Uppgiftens nummer-->
             <h3></h3>
             <!--Vilket är uppdraget?-->
             <div class="speech-bubble">
-            <font color=”#000000”><p> <h4>Uppdrag 4</h4></p>
-            När du kommit fram till stan går du till biblioteket.
-            Du söker en bok i bibliotekets katalog:
-            <a href="http://bibliotek.ornskoldsvik.se" target="_blank">Biblioteken i Örnsköldsvik</a>
-            Vad heter Camilla Läckbergs roman från år 2017? 
-            <div></font>
+            <font color=”#000000”><p> <h4>Uppdrag 5</h4></p>
+              Efter biblioteksbesöket börjar du bli hungrig.
+              Titta på vilka lunchrestauranger som finns på:  
+            <a href="http://lunch.ovik.info" target="_blank">lunch.ovik.info</a>
+            Skriv in den restaurang som du tycker erbjuder den godaste maten i sökrutan.
 
+            </div></font>
             <!--Ibland kanske du vill lägga till en bild i beskrivningen.
             I så fall läger du in bilden i katalogen img.
             Du lägger sedan in följande kod för att berätta att en bild skall visas.
@@ -131,7 +131,7 @@ Du behöver sedan ändra ett saker på varje sida.
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Camilla Läckbergs bok från 2017 heter:</h2>
+            <h2 class="section-heading text-uppercase">Den godaste maten finns på den här restaurangen:</h2>
             <h3 class="section-subheading text-muted">Svara på frågan för att ta dig vidare</h3>
           </div>
         </div>
@@ -149,7 +149,7 @@ Du behöver sedan ändra ett saker på varje sida.
       så många uppdrag vi vill.
       -->
             <form id="contactForm" name="sentMessage" novalidate="novalidate" 
-            action="5.html" 
+            action="6.html" 
             onsubmit="return validateForm()" autocomplete="off">
               <div class="row">
                 <div class="col-md-12">
@@ -222,7 +222,15 @@ Du behöver sedan ändra ett saker på varje sida.
 
       */
 
-      if (answer == "häxan" ) {
+      if (answer == "richard sångkock" || answer == "victory" || answer == "china tower" ||
+      answer == "restaurang sundhem" || answer == "matcompaniet" || answer == "guldbaren" ||
+      answer == "mammamia" || answer == "veckefjärdens gc" || answer == "linas steakhouse" ||
+      answer == "peppes restaurang" || answer == "mon ami" || answer == "bruksgården" ||
+      answer == "il romanos" || answer == "smakfullt" || answer == "bistro 72" ||
+      answer == "safari" || answer == "reuterdahls matsal" || answer == "reuterdahls" ||
+      answer == "quattrobaren" || answer == "fura restaurang" || answer == "jane restaurang" ||
+      answer == "scandic" || answer == "elite hotel" || answer == "gyros bar" ||
+      answer == "sibylla" || answer == "max" || answer == "il padrino" ) {
           return true;
       }else{
         document.getElementById("answer").value ="";

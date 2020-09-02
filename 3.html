@@ -41,6 +41,13 @@ Du behöver sedan ändra ett saker på varje sida.
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href="css/agency.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+      .responsive {
+        max-width: 100%;
+        height: auto;
+      }
+      </style>
   </head>
 
 
@@ -51,17 +58,16 @@ Du behöver sedan ändra ett saker på varje sida.
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Biblioteken i Örnsköldsvik - Teknikjakten!</a>
 
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
+         
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="http://www.itbib.se/teknikjakten/om.html">Så använder du
-             teknikjakten</a>
+              <a class="nav-link js-scroll-trigger" href="http://www.itbib.se/teknikjakten/om.html"></a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="http://www.itbib.se/teknikjakten/om.html">Om teknikjakten</a>
+              <a class="nav-link js-scroll-trigger" href="http://www.itbib.se/teknikjakten/om.html"></a>
             </li> 
 
           </ul>
@@ -86,11 +92,12 @@ Du behöver sedan ändra ett saker på varje sida.
             <p> 
             </p>
             <p> På <a href="http://www.interflora.se" target="_blank">Blomsterateljén i Örnsköldsvik</a> säljs det blommor av olika slag. </p>
-            <img src="./img/blommor.jpg">
-            <br>
-
-            <br>
-            <br>
+             <img src="./img/blommor.jpg" alt="Interflora" class="responsive" width="600" height="400">
+             <br>
+             <br>
+             <h4>Bra jobbat! Nu kan du gå vidare till uppdrag 3! </h4>
+             <br>
+             <br>
             <!--Uppgiftens nummer-->
             <h3></h3>
             <!--Vilket är uppdraget?-->
@@ -213,7 +220,7 @@ Du behöver sedan ändra ett saker på varje sida.
 
       */
 
-      if (answer == "gör håret mjukt") {
+      if (answer == "gör ditt hår mjukt") {
           return true;
       }else{
         document.getElementById("answer").value ="";

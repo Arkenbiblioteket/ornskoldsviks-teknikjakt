@@ -91,25 +91,22 @@ Du behöver sedan ändra ett saker på varje sida.
             <!--Eventuellt återkoppling gällande det tidigare uppdraget-->
             <p> 
             </p>
-            <p> På <a href="http://www.interflora.se" target="_blank">
-            </a> Texten på reklamskylten betyder "Gör ditt hår mjukt". </p>
-            <img src="./img/shampoo.jpg" alt="Shampoonering" class="responsive" width="600" height="400">
+            <p> Nu vet du att du kan hitta dagens rätt på <a href="http://www.lunch.ovik.info" target="_blank">
+            </a> . </p>
+            <img src="./img/mat.jpg" alt="Mat" class="responsive" width="600" height="400">
             <br>
             <br>
-            <h4>Bra jobbat! Nu kan du gå vidare till uppdrag 4! </h4>
+            <h4>Bra jobbat! Nu kan du gå vidare till uppdrag 7! </h4>
             <br>
             <br>
             <!--Uppgiftens nummer-->
             <h3></h3>
             <!--Vilket är uppdraget?-->
             <div class="speech-bubble">
-            <font color=”#000000”><p> <h4>Uppdrag 4</h4></p>
-            När du kommit fram till stan går du till biblioteket.
-            Du söker en bok i bibliotekets katalog:
-            <a href="http://bibliotek.ornskoldsvik.se" target="_blank">Biblioteken i Örnsköldsvik</a>
-            Vad heter Camilla Läckbergs roman från år 2017? 
-            <div></font>
-
+            <font color=”#000000”><p> <h3>Uppdrag 7</h3></p>
+            Du bestämmer dig för att promenera hem. Kolla hur vädret blir i Örnsköldsvik idag på 
+            <a href="https://www.smhi.se" target="_blank">smhi.se</a>. 
+                      </div></font>
             <!--Ibland kanske du vill lägga till en bild i beskrivningen.
             I så fall läger du in bilden i katalogen img.
             Du lägger sedan in följande kod för att berätta att en bild skall visas.
@@ -131,7 +128,7 @@ Du behöver sedan ändra ett saker på varje sida.
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Camilla Läckbergs bok från 2017 heter:</h2>
+            <h2 class="section-heading text-uppercase">Vädret i Örnsköldsvik idag blir:</h2>
             <h3 class="section-subheading text-muted">Svara på frågan för att ta dig vidare</h3>
           </div>
         </div>
@@ -149,7 +146,7 @@ Du behöver sedan ändra ett saker på varje sida.
       så många uppdrag vi vill.
       -->
             <form id="contactForm" name="sentMessage" novalidate="novalidate" 
-            action="5.html" 
+            action="8.html" 
             onsubmit="return validateForm()" autocomplete="off">
               <div class="row">
                 <div class="col-md-12">
@@ -222,7 +219,12 @@ Du behöver sedan ändra ett saker på varje sida.
 
       */
 
-      if (answer == "häxan" ) {
+      if (answer == "varmt" || answer == "kallt" || answer == "soligt" ||
+      answer == "molnigt" || answer == "regnigt" || answer == "snöigt" ||
+      answer == "dimmigt" || answer == "klart" || answer == "grått" ||
+      answer == "rått" || answer == "torrt" || answer == "hett" ||
+      answer == "svalt" || answer == "åska" || answer == "skurar" ||
+      answer == "blåsigt" || answer == "stormigt" ) {
           return true;
       }else{
         document.getElementById("answer").value ="";
