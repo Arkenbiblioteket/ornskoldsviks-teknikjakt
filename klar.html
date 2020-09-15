@@ -47,6 +47,32 @@ Du behöver sedan ändra ett saker på varje sida.
         max-width: 100%;
         height: auto;
       }
+
+      @keyframes    firework-animation {
+    0% {background-color : #ff8426;}
+    25% {background-color : #fffc84;}
+    50% {background-color : #ff83f4;}
+    75% {background-color : #83b6ff;}
+    100% {background-color : #ff8426;}
+}
+@-webkit-keyframes firework-animation {
+    0% {background-color : #ff8426;}
+    25% {background-color : #fffc84;}
+    50% {background-color : #ff83f4;}
+    75% {background-color : #83b6ff;}
+    100% {background-color : #ff8426;}
+}
+.fireWorkParticle {
+    z-index : 999;
+    position: absolute;
+    height : 5px;
+    width : 5px;
+    border-radius : 5px;
+    animation-name : firework-animation;
+    animation-timing-function : linear;
+    animation-duration : 1s;
+    animation-iteration-count : infinite;
+}
       </style>
   </head>
 
@@ -109,7 +135,7 @@ Du behöver sedan ändra ett saker på varje sida.
             Vi hoppas du har lärt dig något nytt som du kan ha nytta av i din vardag.
             
             </div></font>
-            
+            <div class = "fireWorkParticle"></div>
             <!--Ibland kanske du vill lägga till en bild i beskrivningen.
             I så fall läger du in bilden i katalogen img.
             Du lägger sedan in följande kod för att berätta att en bild skall visas.
