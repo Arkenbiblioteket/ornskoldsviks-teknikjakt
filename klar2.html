@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 SKAPA EN EGEN MALLSIDA FÖR UPPDRAG
 ==========================================================
 Nu blir det lite repetition. Den sida hu hintills arbetet med 
@@ -40,19 +40,44 @@ Du behöver sedan ändra ett saker på varje sida.
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href="css/agency.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">´
+    <link href="css/shape.css" rel="stylesheet">
 
     <style>
       .responsive {
         max-width: 100%;
         height: auto;
       }
+     
+
+@-webkit-keyframes firework-animation {
+    0% {background-color : #ff8426;}
+    25% {background-color : #fffc84;}
+    50% {background-color : #d619c6;}
+    75% {background-color : #062d63;}
+    100% {background-color : #ff8426;}
+}
+
+
+.fireWorkParticle {
+    z-index : 999;
+    position: absolute;
+    height : 5px;
+    width : 5px;
+    border-radius : 5px;
+    animation-name : firework-animation;
+    animation-timing-function : linear;
+    animation-duration : 1s;
+    animation-iteration-count : infinite;
+}
       </style>
+      
   </head>
 
 
   <body id="page-top">
   <!-- Denna del av koden berättar vad menyn skall innehålla -->
+
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Biblioteken i Örnsköldsvik</a>
@@ -78,6 +103,7 @@ Du behöver sedan ändra ett saker på varje sida.
     <!--SLUT PÅ DELEN SOM BESKRIVER MENYN LÄNGST UPP-->
 
     <!-- DELEN SOM BESKRIVER FÖRSTA UPPDRAGET STARTAR -->
+
     <section id="services">
       <div class="container">
         <div class="row">
@@ -89,29 +115,33 @@ Du behöver sedan ändra ett saker på varje sida.
             <h3></h3>
 
             <!--Eventuellt återkoppling gällande det tidigare uppdraget-->
-            <p> 
-            </p>
-            <p> Såsen som serveras är <b>kantarellostsås</b>. <br>
-            Sök vidare efter goda recept på <a href="https://www.google.se" target="_blank">Google</a>.
-           </p>
-            <img src="./img/kantareller.jpg" alt="Mat" class="responsive" width="600" height="400">
-            <br>
-            <br>
-            <h4>Gå till nästa uppdrag! </h4>
-            <center><div class="b"></div></center>
-            <br>
+
             <!--Uppgiftens nummer-->
             <h3></h3>
             <!--Vilket är uppdraget?-->
+
+            <div class="pyro">
+                <div class="before"></div>
+                <div class="after"></div>
+            </div>   
+            <div class="pyro">
+                <div class="before"></div>
+                <div class="after"></div>
+            </div>  
+            <br><br>
             <div class="speech-bubble">
-            <font color=”#000000”><p> 
-            <h3>Uppdrag 11</h3></p>
-            På kvällen kokar du en kopp te och sätter dig i soffan för att se en film. 
-            Gå till filmstreamingtjänsten <a href="https://www.viddla.se" target="_blank">Viddla</a>.
-            Vem har huvudrollen i filmen <b>Guldfeber</b>? 
-           
-           
-            </div></font>
+                          <font color=”#000000”><p> <h1>GRATTIS!</h1></p><br>
+                Nu har du tagit dig igenom "Min digitala dag"!
+                Vi hoppas du har lärt dig något nytt som du 
+                kan ha nytta av i din vardag.<br><br>
+    
+                Klicka på länken här nedanför och fyll i dina kontaktuppgifter så tävlar du om fina priser!<br> <br>
+               
+                <a href="https://bibliotek.ornskoldsvik.se/web/arena/min-digitala-dag">Jag vill vara med och tävla om fina priser!</a>
+ 
+  
+              </div></font>
+ 
             <!--Ibland kanske du vill lägga till en bild i beskrivningen.
             I så fall läger du in bilden i katalogen img.
             Du lägger sedan in följande kod för att berätta att en bild skall visas.
@@ -126,52 +156,6 @@ Du behöver sedan ändra ett saker på varje sida.
         </div>
       </div>
     </section>
-
- 
-<!-- DELEN DÄR MAN MATAR IN SITT SVAR STARTAR -->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h3 class="section-heading text-uppercase">Skådespelaren heter:</h3>
-            <h3 class="section-subheading text-muted">Svara på frågan för att ta dig vidare</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-
-      <!--VILKEN SIDA SKALL LADDAS OM MAN SKRIVIT IN RÄTT SVAR
-      Du behöver här berätta vilken sida som skall laddas om man löser uppdraget.
-      Just nu är det sidan som heter 2.html som skall laddas.
-      Om vi istället skulle arbeta med uppdrag 2 just så och ändra i filen 2.html skulle vi då alltså
-      istället låta det stå 3.html eftersom det då är den sidan som borde laddas.
-      Om detta är sista uppdraget i din jakt skriver du in klar.html
-
-      Vi kan fortsätta på detta viset och lägga till nya sidor tills dess att vi skapat
-      så många uppdrag vi vill.
-      -->
-            <form id="contactForm" name="sentMessage" novalidate="novalidate" 
-            action="12.html" 
-            onsubmit="return validateForm()" autocomplete="off">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <input class="form-control" id="answer" type="text" placeholder="Skriv ditt svar här" required="required" data-validation-required-message="Rutan får inte vara tom">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  
-                <div class="col-lg-12 text-center">
-                  <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Skicka ditt svar</button>
-                </div>
-              </div>
-            
-          </div></form>
-        </div>
-      </div>
-    </div></section>
-
-    <!-- DENNA DEL BESKRIVER INFORMATIONEN SOM VISAS LÄNGST NER PÅ SIDAN -->
     <footer>
       <div class="container">
         <div class="row">
@@ -224,7 +208,7 @@ Du behöver sedan ändra ett saker på varje sida.
 
       */
 
-      if (answer == "charlie" || answer == "chaplin" || answer == "charlie chaplin") {
+      if (answer == "stunder av lycka" ) {
           return true;
       }else{
         document.getElementById("answer").value ="";
