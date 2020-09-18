@@ -47,21 +47,17 @@ Du behöver sedan ändra ett saker på varje sida.
         max-width: 100%;
         height: auto;
       }
+     
 
-      @keyframes    firework-animation {
-    0% {background-color : #ff8426;}
-    25% {background-color : #fffc84;}
-    50% {background-color : #ff83f4;}
-    75% {background-color : #83b6ff;}
-    100% {background-color : #ff8426;}
-}
 @-webkit-keyframes firework-animation {
     0% {background-color : #ff8426;}
     25% {background-color : #fffc84;}
-    50% {background-color : #ff83f4;}
-    75% {background-color : #83b6ff;}
+    50% {background-color : #d619c6;}
+    75% {background-color : #062d63;}
     100% {background-color : #ff8426;}
 }
+
+
 .fireWorkParticle {
     z-index : 999;
     position: absolute;
@@ -74,14 +70,16 @@ Du behöver sedan ändra ett saker på varje sida.
     animation-iteration-count : infinite;
 }
       </style>
+      
   </head>
 
 
   <body id="page-top">
   <!-- Denna del av koden berättar vad menyn skall innehålla -->
+
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Biblioteken i Örnsköldsvik - Teknikjakten!</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Biblioteken i Örnsköldsvik</a>
 
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         
@@ -104,6 +102,7 @@ Du behöver sedan ändra ett saker på varje sida.
     <!--SLUT PÅ DELEN SOM BESKRIVER MENYN LÄNGST UPP-->
 
     <!-- DELEN SOM BESKRIVER FÖRSTA UPPDRAGET STARTAR -->
+
     <section id="services">
       <div class="container">
         <div class="row">
@@ -115,27 +114,28 @@ Du behöver sedan ändra ett saker på varje sida.
             <h3></h3>
 
             <!--Eventuellt återkoppling gällande det tidigare uppdraget-->
-            <p> 
-            </p>
-            <p>Avsnittet heter <b>Stunder av lycka.</b> <br>
-              Titta igenom vilka <a href="https://sverigesradio.se/program" target="_blank">Poddar & Program</a> du skulle vilja lyssna på. <br>
-              När du hittat något du gillar går det bra att ladda ner avsnittet till<br> 
-              din enhet, så du kan lyssna på promenaden eller resan.
-           </p>
-            <img src="./img/karlavagnen.jpg" alt="Mat" class="responsive" width="600" height="400">
-            <br>
-            <br>
-            <br>
+
             <!--Uppgiftens nummer-->
             <h3></h3>
             <!--Vilket är uppdraget?-->
+
+            <div class="pyro">
+                <div class="before"></div>
+                <div class="after"></div>
+            </div>   
+            '
             <div class="speech-bubble">
-            <font color=”#000000”><p> <h3>GRATTIS!</h3></p>
-            Nu har du tagit dig igenom vår teknikjakt och lärt dig mer om olika tjänster på Internet!
-            Vi hoppas du har lärt dig något nytt som du kan ha nytta av i din vardag.
-            
-            </div></font>
-            <div class = "fireWorkParticle"></div>
+                          <font color=”#000000”><p> <h1>GRATTIS!</h1></p><br>
+                Nu har du tagit dig igenom "Min digitala dag"!
+                Vi hoppas du har lärt dig något nytt som du 
+                kan ha nytta av i din vardag.<br><br>
+    
+                Klicka på länken här nedanför och fyll i dina kontaktuppgifter så deltar du i 
+                ett lotteri!<br> 
+ 
+  
+              </div></font>
+ 
             <!--Ibland kanske du vill lägga till en bild i beskrivningen.
             I så fall läger du in bilden i katalogen img.
             Du lägger sedan in följande kod för att berätta att en bild skall visas.
@@ -150,10 +150,6 @@ Du behöver sedan ändra ett saker på varje sida.
         </div>
       </div>
     </section>
-
- 
-
-    <!-- DENNA DEL BESKRIVER INFORMATIONEN SOM VISAS LÄNGST NER PÅ SIDAN -->
     <footer>
       <div class="container">
         <div class="row">
@@ -206,7 +202,7 @@ Du behöver sedan ändra ett saker på varje sida.
 
       */
 
-      if (answer ==  ) {
+      if (answer == "stunder av lycka" ) {
           return true;
       }else{
         document.getElementById("answer").value ="";
