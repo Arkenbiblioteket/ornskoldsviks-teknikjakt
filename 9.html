@@ -105,9 +105,10 @@ Du behöver sedan ändra ett saker på varje sida.
             <!--Vilket är uppdraget?-->
             <div class="speech-bubble">
             <font color=”#000000”><p> <h3>Uppdrag 9</h3></p>
-            När du kommer hem har du fått ett rejält skavsår. Gå till
-            <a href="https://www.1177.se" target="_blank">1177</a> och sök på <b>skavsår</b>. 
-            Under rubriken: <b>När och var ska jag söka vård?</b> rekommenderas du söka vård om du har en viss sjukdom och besväras av skavsår. Vilken är sjukdomen?
+            När du kommer hem känner du att du börjar få huvudvärk. Gå till
+            <a href="https://www.1177.se" target="_blank">1177</a> och sök på <b>huvudvärk</b>.
+            Nämn en av de vanligaste orsakerna till huvudvärk enligt 1177.
+
                       </div></font>
             <!--Ibland kanske du vill lägga till en bild i beskrivningen.
             I så fall läger du in bilden i katalogen img.
@@ -221,7 +222,9 @@ Du behöver sedan ändra ett saker på varje sida.
 
       */
 
-      if (answer == "diabetes" ) {
+      if (answer == "stress" || answer == "spända muskler" || answer == "förkylning" || answer == "oro" 
+      || answer == "synfel" || answer == "migrän" || answer == "hjärntumör" || answer == "bettfel" || answer == "bihåleinflammation" 
+      || answer == "hjärnblödning"  ) {
           return true;
       }else{
         document.getElementById("answer").value ="";
