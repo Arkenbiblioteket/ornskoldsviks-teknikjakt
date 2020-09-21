@@ -41,14 +41,34 @@ Du behöver sedan ändra ett saker på varje sida.
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href="css/agency.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-   
-
+    <link href="css/firework.css" rel="stylesheet">
 
     <style>
       .responsive {
         max-width: 100%;
         height: auto;
       }
+
+@-webkit-keyframes firework-animation {
+    0% {background-color : #ff8426;}
+    25% {background-color : #fffc84;}
+    50% {background-color : #d619c6;}
+    75% {background-color : #062d63;}
+    100% {background-color : #ff8426;}
+}
+
+
+.fireWorkParticle {
+    z-index : 999;
+    position: absolute;
+    height : 5px;
+    width : 5px;
+    border-radius : 5px;
+    animation-name : firework-animation;
+    animation-timing-function : linear;
+    animation-duration : 1s;
+    animation-iteration-count : infinite;
+}
       </style>
   </head>
 
@@ -76,8 +96,11 @@ Du behöver sedan ändra ett saker på varje sida.
         </div>
       </div>
     </nav>
-
-    <!--SLUT PÅ DELEN SOM BESKRIVER MENYN LÄNGST UPP-->
+    <div class="pyro">
+      <div class="before"></div>
+      <div class="after"></div>
+  </div>   
+     <!--SLUT PÅ DELEN SOM BESKRIVER MENYN LÄNGST UPP-->
 
     <!-- DELEN SOM BESKRIVER FÖRSTA UPPDRAGET STARTAR -->
     <section id="services">
@@ -91,18 +114,23 @@ Du behöver sedan ändra ett saker på varje sida.
             <h3></h3>
 
             <!--Eventuellt återkoppling gällande det tidigare uppdraget-->
-            
+  
             <br>
             <!--Uppgiftens nummer-->
             <h3></h3>
             <!--Vilket är uppdraget?-->
             <div class="speech-bubble">
-            <font color=”#000000”><p> <h4>Uppdrag 4</h4></p>
-            När du kommit fram till stan går du till biblioteket.
-            Du söker en bok på bibliotekets webb:
-            <a href="http://bibliotek.ornskoldsvik.se" target="_blank">bibliotek.ornskoldsvik.se</a>
-            Vad heter Camilla Läckbergs roman från år 2017? 
-            <div></font>
+              <font color=”#000000”><p> 
+              <h1>GRATTIS</h1></p>
+              Nu har du tagit dig igenom "Min digitala dag"!
+              Vi hoppas du har lärt dig något nytt som du 
+              kan ha nytta av i din vardag.<br><br>
+              Klicka på länken här nedanför och fyll i dina kontaktuppgifter så tävlar du om fina priser!<br> <br>
+  
+              <button class="button"><a href="https://bibliotek.ornskoldsvik.se/web/arena/min-digitala-dag">Tävla!</a></button>
+              </div></font>
+       
+  
 
             <!--Ibland kanske du vill lägga till en bild i beskrivningen.
             I så fall läger du in bilden i katalogen img.
@@ -132,6 +160,8 @@ Du behöver sedan ändra ett saker på varje sida.
         <div class="row">
           <div class="col-lg-12">
 
+            
+
       <!--VILKEN SIDA SKALL LADDAS OM MAN SKRIVIT IN RÄTT SVAR
       Du behöver här berätta vilken sida som skall laddas om man löser uppdraget.
       Just nu är det sidan som heter 2.html som skall laddas.
@@ -148,8 +178,7 @@ Du behöver sedan ändra ett saker på varje sida.
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group">
-                   
-                    <p class="help-block text-danger"></p>
+                  <p class="help-block text-danger"></p>
                   </div>
                   
                 <div class="col-lg-12 text-center">
