@@ -1,10 +1,11 @@
-.speech-bubble2 {
-	background: #ea7600;
-	border-radius: 00px;
-    font-size: 24px;
-    font-color: #ffffff;
-    line-height: 1,5;
-	margin: 0 auto 0px;
+
+.speech-bubble {
+	background: #ffffff;
+	border-radius: 30px;
+	font-size: 24px;
+    font-color: #000000;
+	line-height: 1,5;
+	margin: 0 auto 40px;
 	max-width: 600px;
 	padding: 30px;
 	position: relative;
@@ -24,3 +25,4 @@
 	  position: absolute;
 	  right: 20px;
 	}
+  }
